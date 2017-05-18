@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.post('/submit', function (req, res) {
     var firstName = req.body.firstname;
     var lastName = req.body.lastname;
-    middleware.insert(firstName, lastName)
+    middleware.insert(firstName, lastName);
     res.redirect('/show');
 });
 

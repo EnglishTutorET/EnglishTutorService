@@ -11,6 +11,6 @@ var dbHandler = {
     retrive: function () {
         return db.select('*').from('blog_dev')
     }
-}
+};
 
 module.exports = dbHandler;
